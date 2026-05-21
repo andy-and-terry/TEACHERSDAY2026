@@ -826,6 +826,10 @@ document.getElementById('btn-login')
   btn.textContent = 'Sign in';
 
   if(user){
+    localStorage.setItem(
+    'logged_in_user',
+    user.username
+    );
 
     state = {
       attempts:0,
