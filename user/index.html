@@ -2,7 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>
-    
-  </script>
+<script>
+
+const authUser =
+  localStorage.getItem('logged_in_user');
+
+if(!authUser){
+
+  localStorage.clear();
+
+  window.location.href = '../login/';
+
+}
+
+</script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+/>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;500;700&display=swap');
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+:root{
+  --bg:#0e0e10;
+  --surface:#18181c;
+  --border:#2a2a32;
+  --accent:#7f77dd;
+  --accent2:#5dcaa5;
+  --text:#f0efe8;
+  --muted:#888780;
+  --danger:#e24b4a;
+  --warn:#ef9f27;
+  --success:#97c459;
+  --font:'Syne',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+
+body{
+  background:var(--bg);
+  font-family:var(--font);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 1rem;
+}
+</style>
 </head>
+<body>
+  <h1>Welcome!</h1>
+  <hr>
+  <p><a href="applications">See applications</a> | <a href="refills">Stationary refill</a> | <a href="mailto:yucheng.lee29@gmail.com">Contact</a></p>
+  <hr>
+  <img src="../assets/img.banner.png" href="specials_2026" alt="2026 specials!">
+  <h3>Happy teachers' day!</h3>
+  <h4>Video:</h4>
+  <p><a href="https://drive.google.com/file/d/1BNNcOhIwoMs6DqUQ6l-NgRB4fW41A2rp/view?usp=drivesdk">Video</a></p>
+  <p><a href="https://drive.google.com/file/d/12dE00vW5jlpJFRYisk6XFT8nI2tIzAot/view?usp=drivesdk">If you are intrested...</a></p>
+  <hr>
+  <footer>Happy teachers' day 2026!!</footer>
+</body>
