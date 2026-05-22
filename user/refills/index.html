@@ -1,1 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<script>
 
+const authUser =
+  localStorage.getItem('logged_in_user');
+
+if(!authUser){
+
+  localStorage.clear();
+
+  window.location.href = '../login/';
+
+}
+
+</script>
+	<link rel="stylesheet" href="../assets/font-nuito.css">
+	<style>
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+	</style>
+</head>
+<body>
+  <h1>Stationary refills</h1>
+  <hr>
+  <p>Eligible items:</p>
+  <ul>
+    <li>Whiteboard Marker refills</li>
+  </ul>
+  <hr>
+  <footer>Happy teachers' day 2026!!</footer>
+</body>
