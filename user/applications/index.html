@@ -3,6 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Apps</title>
+  <script>
+
+const authUser =
+  localStorage.getItem('logged_in_user');
+
+if(!authUser){
+
+  localStorage.clear();
+
+  window.location.href = '../login/';
+
+}
+
+</script>
+  	<style>
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+	</style>
 </head>
 <body>
   <h1>Apps</h1>
